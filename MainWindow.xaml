@@ -1,0 +1,31 @@
+﻿<Window x:Class="DatabasePerp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DatabasePerp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <TextBlock>Login</TextBlock>
+            <TextBox Name="login"></TextBox>
+            <TextBlock>Hasło</TextBlock>
+            <PasswordBox Name="passowrd"></PasswordBox>
+            <TextBlock>Data urodzeń</TextBlock>
+            <DatePicker Name="birthday"></DatePicker>
+            <Button Name="btn_0" Click="Operate">Sprawdź dane</Button>
+            <DockPanel>
+                <Button IsEnabled="False" Name="btn_1" Click="Operate" Width="160" Content="Dodaj"/>
+                <Button IsEnabled="False" Name="btn_2" Click="Operate" Width="160" Content="Pobierz"/>
+                <Button IsEnabled="False" Name="btn_3" Click="Operate" Width="160" Content="Zaktualizuj"/>
+                <Button IsEnabled="False" Name="btn_4" Click="Operate" Width="160" Content="Usuń"/>
+                <Button IsEnabled="False" Name="btn_5" Click="Operate" Width="160" Content="Pobierz Wszystkie"/>
+            </DockPanel>
+            <DataGrid x:Name="UsersData" AutoGenerateColumns="True" />
+        </StackPanel>
+        <StackPanel>
+            
+        </StackPanel>
+    </Grid>
+</Window>
